@@ -1,0 +1,298 @@
+@media ( max-width: 1200px )
+	.menu
+		.menu_item
+			padding-right: 22px
+	.promo
+		.promo-title
+			font-size: 50px
+	.advantages
+		.advantages-block
+			align-items: flex-start
+			.advantages-img
+				width: 105px
+				height: 105px
+			.advantages-cart
+				width: 315px
+	.app
+		.row
+			.app-block
+				width: 300px
+	footer
+		.wrapper>div
+			.footer-app img
+				max-width: 230px
+
+@media ( max-width: 991px )
+	.menu
+		.menu_item
+			padding-right: 12px
+		.menu_link
+			font-size: 12px
+	.subheader
+		.subheader-phone
+			font-size: 19px
+		.subheader-btn
+			width: 100%
+			font-size: 12px
+	.promo
+		.promo-title
+			font-size: 42px
+		.promo-subtitle
+			font-size: 26px
+			margin-top: 10px
+	.advantages
+		.advantages-block
+			align-items: flex-start
+			.advantages-img
+				width: 80px
+				height: 80px
+				margin-right: 20px
+				img
+					max-width: 50px
+			.advantages-cart
+				width: 230px
+	.car
+		min-height: 745px
+	.possibility-block-list
+		li
+			font-size: 15px
+	footer
+		.wrapper
+			display: flex
+			flex-direction: column
+			align-items: center
+		.wrapper>div
+			display: flex
+			order: 2
+			width: 100%
+			justify-content: center
+			margin: 15px auto
+			.footer-app
+				img
+					max-width: 300px
+		.wrapper>div:nth-child(2)
+			display: flex
+			order: 1
+
+@media ( max-width: 768px )
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: flex-start
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0,0,0,0.8)
+		transition: 0.6s all
+		&_active
+			left: 0
+		.menu_item
+			padding: 10px 0
+			border: none
+		.menu_link
+			font-size: 20px
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 25px
+		transform: translateY(-50%)
+		width: 26px
+		height: 12px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #fff
+			margin-bottom: 2px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.xs-hidden
+		display: none
+	.subheader
+		.subheader-btn
+			display: block
+			width: 200px
+			height: 40px
+			margin: 0 auto
+			margin-top: 10px
+		.xs-visible
+			display: block
+		.subheader-phone
+			display: block
+			color: #fff
+			font-size: 18px
+			font-weight: 400
+			text-align: center
+			text-transform: uppercase
+			margin-top: 10px
+	.promo
+		.promo-title
+			font-size: 35px
+		.promo-subtitle
+			font-size: 22px
+			margin-top: 0
+	.title
+		font-size: 28px
+	.advantages
+		.advantages-block
+			flex-direction: column
+			align-items: center
+			.advantages-img
+				width: 100px
+				height: 100px
+				margin: 0 0 27px 0
+				img
+					max-width: 80px
+			.advantages-cart
+				width: 315px
+				.advantages-subtitle
+					text-align: center
+	.possibility-block
+		margin: 33px 0 0
+
+@media ( max-width: 576px )
+	.menu
+		.menu_link
+			font-size: 18px
+	.subheader
+		height: 60px
+		&-logo
+			img
+				width: 100%
+		&-official
+			display: none
+		.subheader-btn
+			width: 110px
+			height: 22px
+			margin-top: 9px
+			font-size: 9px
+			font-weight: 400
+			font-style: normal
+			letter-spacing: normal
+		.subheader-phone
+			font-size: 12px
+			margin-top: 9px
+	.promo
+		min-height: 400px
+		padding: 113px 0 35px 0
+		.promo-title
+			line-height: normal
+			font-size: 30px
+		.promo-subtitle
+			line-height: normal
+			font-size: 20px
+			margin-top: 30px
+		.promo-description
+			display: none
+		.promo-btn
+			margin-top: 72px
+			width: 210px
+			height: 50px
+			color: #ffffff
+			font-size: 16px
+			font-weight: 400
+			font-style: normal
+			letter-spacing: normal
+			text-align: center
+			text-transform: uppercase
+	.advantages
+		padding: 22px 0 50px
+		.advantages-block
+			margin-top: 26px
+			.advantages-cart
+				width: 100%
+				.advantages-subtitle
+					font-size: 16px
+					font-weight: 400
+					font-style: normal
+					letter-spacing: normal
+					line-height: normal
+				.advantages-desc
+					font-size: 15px
+					font-weight: 300
+					font-style: normal
+					letter-spacing: normal
+					line-height: 21px
+	.title
+		font-size: 16px
+		margin-top: 15px
+	.app
+		padding: 22px 0 20px
+		.row
+			margin-top: 27px
+			.app-block
+				width: 100%
+				padding: 81px 47px 28px
+				margin: 0 auto 30px
+				.app-block-title
+					font-size: 18px
+					font-weight: 400
+					font-style: normal
+					letter-spacing: normal
+					line-height: 31px
+	.subtitle
+		font-size: 14px
+		letter-spacing: normal
+		line-height: 21px
+		margin-top: 11px
+	.car
+		min-height: 390px
+		background: #070716
+		padding: 25px 0 33px
+		.title,.subtitle
+			display: none
+		.car-block
+			padding-top: 35px
+			.car-block-desc
+				margin-top: 23px
+				color: #ffffff
+				font-size: 17px
+				font-weight: 300
+				font-style: normal
+				letter-spacing: normal
+				line-height: 22px
+	.possibility
+		padding: 25px 0 16px
+		.possibility-block
+			margin: 22px 0 10px
+			.possibility-block-title
+				font-size: 16px
+				margin-bottom: 14px
+			.possibility-block-list
+				li
+					font-size: 14px
+			.possibility-block-subtitle
+				font-size: 14px
+	.city
+		min-height: 360px
+		padding-top: 25px
+		.city-link
+			bottom: 30px
+			font-size: 12px
+	footer
+		.wrapper>div
+			.footer-menu
+				.first-menu
+					width: 100%
+					margin: 20px 0 0
+					li
+						font-size: 12px
+				.second-menu
+					width: 100%
+					margin: 10px 0 0
+					li
+						font-size: 9px
+			.footer-app
+				img
+					max-width: 100%

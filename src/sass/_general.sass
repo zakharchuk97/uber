@@ -1,0 +1,406 @@
+header
+	position: relative
+
+nav
+	height: 50px
+	background-color: #212121
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 99
+
+.hamburger
+	display: none
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+	list-style: none
+
+	.menu_link
+		color: #ffffff
+		font-size: 15px
+		font-weight: 300
+
+		&:hover
+			text-decoration: none
+
+	.menu_item
+		border-right: 2px dotted #000000
+		padding-right: 45px
+
+		&:last-child
+			border: none
+
+.subheader
+	position: absolute
+	width: 100%
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+
+	.subheader-logo
+		max-width: 100%
+		margin-top: 16px
+		display: block
+
+	.subheader-official
+		margin-top: 6px
+		font-size: 13px
+		font-weight: 400
+		color: rgba(255, 255, 255, 0.5)
+
+	.subheader-call
+		font-size: 12px
+		font-weight: 300
+		text-align: right
+		color: #ffffff
+		padding-top: 19px
+
+	.subheader-phone
+		display: block
+		margin-top: 8px
+		font-size: 22px
+		line-height: 12px
+		text-align: right
+		color: #ffffff
+		font-weight: 400
+		text-transform: uppercase
+		text-decoration: none
+	.xs-visible
+		display: none
+
+	.subheader-btn
+		width: 172px
+		height: 46px
+		box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%)
+		text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+		font-size: 14px
+		text-align: center
+		color: #ffffff
+		text-transform: uppercase
+		margin-top: 19px
+		+btn_hover
+
+.promo
+	min-height: 800px
+	background: url('../img/promo.png') center (center / cover) no-repeat
+	padding: 150px 0 135px 0
+	text-align: center
+	margin-top: 50px
+
+	.promo-title
+		font-size: 60px
+		font-weight: 700
+		line-height: 60px
+		color: #ffffff
+		text-transform: uppercase
+		margin-bottom: 0
+
+	.promo-subtitle
+		font-size: 36px
+		font-weight: 700
+		line-height: 36px
+		color: #ffffff
+		text-transform: uppercase
+		margin-bottom: 0
+		margin-top: 22px
+
+	.promo-description
+		margin-top: 23px
+		font-size: 18px
+		line-height: 24px
+		font-weight: normal
+		color: #ffffff
+
+	.promo-btn
+		margin-top: 118px
+		width: 259px
+		height: 63px
+		box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, $blue, #4ce2ff)
+		text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+		text-transform: uppercase
+		font-size: 18px
+		font-weight: normal
+		color: #ffffff
+		+btn_hover
+
+.advantages
+  padding: 71px 0 65px 0
+
+.label
+  width: 112px
+  height: 24px
+  background-color: #000000
+  font-size: 11px
+  font-weight: 300
+  text-align: center
+  color: #ffffff
+  text-transform: uppercase
+  padding: 5px 12px
+  margin: 0 auto
+
+
+.title
+  font-size: 38px
+  font-weight: 700
+  text-align: center
+  color: #222222
+  text-transform: uppercase
+  margin-top: 34px
+  margin-bottom: 0
+
+.advantages .advantages-block
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 35px
+
+  .advantages-img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 113px
+    height: 113px
+    margin-right: 26px
+    background-color: $blue
+    border-radius: 100%
+
+  .advantages-cart
+    width: 343px
+
+    .advantages-subtitle
+      font-size: 17px
+      line-height: 21px
+      font-weight: 400
+      color: $blue
+
+    .advantages-desc
+      font-size: 15px
+      line-height: 21px
+      font-weight: 300
+      text-align: justify
+      color: #202020
+
+.subtitle
+	margin-top: 19px
+	text-align: center
+	color: #222222
+	font-size: 17px
+	font-weight: 400
+	font-style: normal
+.app
+	min-height: 864px
+	background: url('../img/bg-mob-app.png') center (center / cover) no-repeat
+	padding: 48px 0 79px
+	.row
+		margin-top: 32px
+		.app-block
+			width: 320px
+			height: 280px
+			padding: 90px 26px 35px
+			text-align: center
+			margin: 0 auto 20px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			background: pink
+			.app-block-title
+				color: #ffffff
+				font-size: 24px
+				font-weight: 400
+				font-style: normal
+				letter-spacing: normal
+				line-height: 28px
+				text-transform: uppercase
+			&-1
+				background: url(../img/21.png) center (center / cover) no-repeat
+			&-2
+				background: url(../img/22.png) center (center / cover) no-repeat
+			&-3
+				background: url(../img/23.png) center (center / cover) no-repeat
+			&-4
+				background: url(../img/24.png) center (center / cover) no-repeat
+			&-5
+				background: url(../img/25.png) center (center / cover) no-repeat
+			&-6
+				background: url(../img/26.png) center (center / cover) no-repeat
+			img
+				cursor: pointer
+
+.car
+	min-height: 896px
+	background: url('../img/bg-car.png') center (center / cover) no-repeat
+	padding: 57px 0 138px
+	&-block
+		padding-top: 56px
+		img
+			margin: 0 auto
+			width: 100%
+		&-desc
+			text-align: center
+			color: #222222
+			font-size: 17px
+			font-weight: 300
+			font-style: normal
+			letter-spacing: normal
+			line-height: 24px
+
+.label-inversion
+	background-color: #ffffff
+	color: #070716
+	font-weight: 400
+
+.title-inversion
+	color: #ffffff
+
+.subtitle-inversion
+	color: #ffffff
+
+.possibility
+	padding: 68px  0 22px
+	&-block
+		margin: 33px 0 62px
+		&-title
+			color: $blue
+			font-size: 22px
+			font-weight: 400
+			font-style: normal
+			letter-spacing: normal
+			line-height: normal
+			margin-bottom: 18px
+		&-list
+			list-style: none
+			li
+				color: #222222
+				font-size: 17px
+				font-weight: 300
+				font-style: normal
+				letter-spacing: normal
+				line-height: 24px
+				position: relative
+				&::before
+					content: ""
+					display: block
+					width: 21px
+					height: 20px
+					background: url("../icons/tick-b.png") center (center / cover) no-repeat
+					position: absolute
+					left: -31px
+		&-subtitle
+			color: $blue
+			font-size: 17px
+			font-weight: 300
+			font-style: normal
+			letter-spacing: normal
+			line-height: normal
+	.text-orange
+		.possibility-block-title
+			color: $orange
+		.possibility-block-list
+			li
+				&::before
+					background: url("../icons/tick-r.png") center (center / cover) no-repeat
+
+.city
+	min-height: 717px
+	padding-top: 49px
+	background: url("../img/world.png") center (center / cover) no-repeat
+	position: relative
+	&-link
+		display: block
+		position: absolute
+		bottom: 49px
+		left: 50%
+		transform: translateX(-50%)
+		color: $blue
+		font-size: 15px
+		font-weight: 400
+		font-style: normal
+		letter-spacing: normal
+		text-align: center
+		text-transform: uppercase
+
+footer
+	padding: 14px 23px 39px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	.wrapper
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 100%
+	.wrapper > div
+			width: 33%
+			.footer-social
+				display: flex
+				a
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 32px
+					height: 32px
+					background: #070716
+					border-radius: 100%
+					margin-right: 9px
+			.footer-menu
+				display: flex
+				flex-direction: column
+				align-items: center
+				.footer-border
+					display: block
+					width: 295px
+					border: 2px solid $blue
+				.first-menu
+					width: 364px
+					margin: 32px 0 0
+					padding: 0
+					display: flex
+					justify-content: space-between
+					li
+						list-style: none
+						color: #070716
+						font-size: 15px
+						font-weight: 300
+						font-style: normal
+						letter-spacing: normal
+						text-transform: uppercase
+						cursor: pointer
+				.second-menu
+					width: 390px
+					margin: 15px 0 0
+					padding: 0
+					display: flex
+					justify-content: space-between
+					li
+						list-style: none
+						color: #999999
+						font-size: 11px
+						font-weight: 300
+						font-style: normal
+						letter-spacing: normal
+						text-transform: uppercase
+						cursor: pointer
+				.language
+					margin: 19px 0 0
+					color: $blue
+					font-size: 11px
+					font-weight: 400
+					font-style: normal
+					letter-spacing: normal
+					text-transform: uppercase
+					cursor: pointer
+			.footer-app
+				display: flex
+				justify-content: flex-end
+				img
+					max-width: 100%
